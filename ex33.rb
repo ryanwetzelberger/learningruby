@@ -1,4 +1,4 @@
-def loop(test)
+def loop(test, increment)
   i = 0
   numbers = []
 
@@ -6,14 +6,14 @@ def loop(test)
     puts "At the top i is #{i}"
     numbers.push(i)
 
-    i += 1
+    i += increment
     puts "Numbers now: ", numbers
     puts "At the bottom i is #{i}"
   end
   return numbers
 end
 
-numbers = loop(6)
+numbers = loop(6, 2)
 
 puts "The numbers: "
 
